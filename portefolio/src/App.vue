@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/" class="nav-btn">Home</router-link>
+    <router-link to="/about" class="nav-btn">About</router-link>
   </div>
   <router-view/>
 </template>
@@ -11,20 +11,35 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
 #nav {
   padding: 30px;
+  display: flex;
+  align-content: flex-end;
+  flex-direction: row-reverse;
+  gap: 40px;
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #cecece;
+    padding: 0;
+    text-decoration: none;
 
     &.router-link-exact-active {
-      color: #42b983;
+      padding: 0;
     }
   }
+
+  .nav-btn:hover {
+    text-decoration: underline;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
 }
 </style>
