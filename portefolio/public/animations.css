@@ -1,0 +1,7 @@
+@keyframes move-line {
+    0%   {left:0px; top:0px; width: 20px;}
+    25%  {left:500px; top:0px; width: 100px;}
+    50%  {left:1000px; top:0px; width:20px}
+    75%  {left:500px; top:0px; width:100px}
+    100% {left:0; top:0px; width: 20px;}
+  }
