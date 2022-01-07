@@ -9,24 +9,51 @@
           <img alt="Etna logo" src="../assets/img/etna.png" class="EtnaPicture">
         </div>
       </div>
-      <div class="topMiddle">
-      </div>
-      <div class="topRight">
-        <h1><em>"Il semble que la perfection soit atteinte non quand il n’y a plus rien à ajouter, mais quand il n’y a plus rien à retrancher."</em></h1>
-        <h3>Antoine de Saint-Exupéry</h3>
+      <div class="topMiddle"></div>
+      <div class="slider">
+        <div class="slider-viewport">
+          <div id="img1">
+            <div id="img2">
+              <div id="img3">
+                <div id="img4">
+                  <div id="img5">
+                    <div class="slider-content">
+                      <div class="citation-card">
+                        <h1><em>"Il semble que la perfection soit atteinte non quand il n’y a plus rien à ajouter, mais quand il n’y a plus rien à retrancher."</em></h1>
+                        <h3>Antoine de Saint-Exupéry</h3>
+                      </div>
+                      <div class="citation-card">
+                        <h1><em>"Il semble que la perfection soit atteinte non quand il n’y a plus rien à ajouter, mais quand il n’y a plus rien à retrancher."</em></h1>
+                        <h3>Antoine de Saint-Exupéry</h3>
+                      </div>
+                      <div class="citation-card">
+                        <h1><em>"Il semble que la perfection soit atteinte non quand il n’y a plus rien à ajouter, mais quand il n’y a plus rien à retrancher."</em></h1>
+                        <h3>Antoine de Saint-Exupéry</h3>
+                      </div>
+                      <div class="citation-card">
+                        <h1><em>"Il semble que la perfection soit atteinte non quand il n’y a plus rien à ajouter, mais quand il n’y a plus rien à retrancher."</em></h1>
+                        <h3>Antoine de Saint-Exupéry</h3>
+                      </div>
+                      <div class="citation-card">
+                        <h1><em>"Il semble que la perfection soit atteinte non quand il n’y a plus rien à ajouter, mais quand il n’y a plus rien à retrancher."</em></h1>
+                        <h3>Antoine de Saint-Exupéry</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <a href="#img1"></a>
+          <a href="#img2"></a>
+          <a href="#img3"></a>
+          <a href="#img4"></a>
+          <a href="#img5"></a>
+        </div>
       </div>
     </div>
-    <div id="mainDiv">
-        <div id="boxDiv">
-            <div id="front"></div>
-            <div id="back"></div>
-            <div id="left"></div>
-            <div id="right"></div>
-            <div id="top"></div>
-            <div id="bottom"></div>
-            <div class="shadow"></div>
-        </div>
-    </div>    
     <div class="bottom">
       <h1 class="comp-txt">Maîtrise des differents languages</h1>
       <div class="line"></div>

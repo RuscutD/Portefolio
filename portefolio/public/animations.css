@@ -1,7 +1,23 @@
 @keyframes move-line {
     0%   {left:0px; top:0px; width: 20px;}
-    25%  {left:500px; top:0px; width: 100px;}
-    50%  {left:1000px; top:0px; width:20px}
-    75%  {left:500px; top:0px; width:100px}
+    25%  {left:745px; top:0px; width: 100px;}
+    50%  {left:1480px; top:0px; width:20px}
+    75%  {left:745px; top:0px; width:100px}
     100% {left:0; top:0px; width: 20px;}
+  }
+
+  @keyframes rotate {
+    0% { transform: rotateY(0); }
+    100% { transform: rotateY(360deg); }
+  }
+
+  @keyframes footerBar {
+    0% { left:0px; top:0px; width: 10px; }
+    50% { left:200px; top:0px; width: 400px; }
+    100% { left:0px; top:0px; width: 10px; }
+  }
+
+  @keyframes displayWelcome {
+    0% { display: none; }
+    100% { display: block; }
   }

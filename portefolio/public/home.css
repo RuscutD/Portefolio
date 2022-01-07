@@ -24,26 +24,12 @@
     margin-left: 100px;
   }
 
-  .topRight {
-    height: 400px;
-    width: 1400px;
+  .citation-card {
+    height: 350px;
+    width: 700px;
 
     text-align: center;
     align-items: center;
-
-    color: white;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.392);
-    background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #243B55, #141e3098); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    margin-right: 100px;
-    padding-top: 100px;
-  }
-
-  .middle {
-    margin-top: 200px;
-    display: flex;
   }
   
   .bottom {
@@ -157,6 +143,8 @@
 
   .comp-txt {
     color: white;
+    display: flex;
+    padding-left: 0px;
   }
 
   .line {
@@ -192,14 +180,13 @@
   }
   
   #btn-html:hover .html-lvl{
-    color: red;
     display: block;
   }
   
   #btn-html:hover .html-hr{
     display: block;
   }
-  
+
   .p-css {
     display: none;
   }
@@ -280,92 +267,72 @@
     display: block;
   }
 
-  .cube-anim {
-    margin-left: 400px;
-  }
-
-  #mainDiv {
-    width: 200px;
-    height: 200px;
-    margin: 200px auto;
-    perspective: 800px;
-}
-
-#boxDiv {
-    width: 200px;   
-    transform-style: preserve-3d; 
-    animation: rotate 15s linear infinite;
-}
-
-#boxDiv div {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    opacity: 0.7;
+  
+  .slider {
+    width: 800px;
+    height: 350px;
+    position: relative;
+    margin-right: 100px;
+    margin-top: 50px;
+    padding-top: 150px;
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.371);
+    border-radius: 20px;
     color: white;
-}
-
-#front {
-    transform: translateZ(200px);
-    background: rgba(255, 255, 255, 0.392);
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-
-#back {
-    transform: rotateY(180deg) translateZ(200px);
-    background: rgba(255, 255, 255, 0.392);
-    background-position: center;
-    background-repeat: no-repeat;    
-}
-
-#left {
-    transform: rotateY(-90deg) translateX(-200px);
-    transform-origin: left;
-    background: rgba(255, 255, 255, 0.392);
-    background-position: center;
-    background-repeat: no-repeat;    
-}
-
-#right {
-    transform: rotateY(90deg) translateX(200px);
-    transform-origin: right;
-    background: rgba(255, 255, 255, 0.392);  
-    background-position: center;
-    background-repeat: no-repeat;    
-}
-
-#top {
-    transform: rotateX(-90deg) translateY(-200px);
-    transform-origin: top;
-    background: rgba(255, 255, 255, 0.392);
-    background-position: center;
-    background-repeat: no-repeat;    
-}
-
-#bottom {
-    transform: rotateX(90deg) translateY(200px);
-    transform-origin: bottom;
-    background: rgba(255, 255, 255, 0.392); 
-    background-position: center;
-    background-repeat: no-repeat;    
-}
-
-@keyframes rotate {
-    0% { transform: rotateY(0); }
-    100% { transform: rotateY(360deg); }
-}
-
-
-.shadow {
-    
-    
-    width:400px;
-    height:400px;
-    background: rgba(0,0,0,0.5);
-    box-shadow: 0 0 50px 50px rgba(0,0,0,0.5);
-    -webkit-transform: rotateX(90deg) translateZ(-250px) rotateY(180deg) translateX(0px);
-
-}
+    background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #243B55, #141e3098); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+  
+  .slider-viewport {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slider-content {
+    display: grid;
+    grid-auto-flow: column;
+    transition: 1s all;
+  }
+  .slider-content .citation-card {
+    width: 800px;
+    height: 400px;
+  }
+  
+  .slider-nav {
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .slider-nav a {
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    background-color: #adafbc;
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+    margin: 0 3px;
+  }
+  .slider-nav a:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+  }
+  
+  #img2:target .slider-content {
+    transform: translateX(-800px);
+  }
+  
+  #img3:target .slider-content {
+    transform: translateX(-1600px);
+  }
+  
+  #img4:target .slider-content {
+    transform: translateX(-2400px);
+  }
+  
+  #img5:target .slider-content {
+    transform: translateX(-3200px);
+  }
