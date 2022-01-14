@@ -4,8 +4,6 @@
     <router-link to="/about" class="nav-btn">About</router-link>
   </div>
   <router-view/>
-  <div id="footer">
-  </div>
 </template>
 
 <style lang="scss">

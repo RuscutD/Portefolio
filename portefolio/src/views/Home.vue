@@ -2,7 +2,7 @@
   <div class="home">
     <div class="top">
       <div class="topLeft">
-        <img alt="Vue logo" src="../assets/img/profilePicture.jpeg" class="profilePicutre">
+        <img alt="profile picture" src="../assets/img/profilePicture.jpeg" class="profilePicutre">
           <h1 class="name">Ruscuta David</h1>
         <h3>Étudiant Développement Web</h3>
         <div class="etna-space">
@@ -101,9 +101,10 @@
             <div class="comp-cont">
               <p class="p-sql">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias odio consectetur enim amet, ratione quod consequatur, autem non voluptates repudiandae provident officia dolor ab quisquam blanditiis placeat! Iure, dolorum.</p>
             </div>
-              <progress class="sql-lvl" max="100" value="50"></progress>
+              <progress class="sql-lvl" max="100" value="30"></progress>
         </div>
       </div>
+      <div class="button"></div>
     </div>
   </div>
 </template>
