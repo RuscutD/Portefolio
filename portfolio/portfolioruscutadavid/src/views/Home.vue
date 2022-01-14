@@ -2,9 +2,9 @@
   <div class="home">
   <div class="P-1">
   <div class="content">
-    <h2>Welcome</h2>
-    <h2>Welcome</h2>
-    <h3>Hope you will enyoy to discover more about me and my profession.</h3>
+    <h2>David</h2>
+    <h2>David</h2>
+    <h3>Étudiant Développement Web</h3>
     <div id="triangle"></div>
   </div>
   </div>
@@ -12,9 +12,8 @@
   <div class="about">
     <div class="left">
         <img alt="profile picture" src="../assets/img/profilePicture.jpeg" class="profilePicutre">
-      <h1>Ruscuta David</h1>
+      <h1 class="name">Ruscuta David</h1>
       <h5>Étudiant Développement Web</h5>
-      <img alt="Etna logo" src="../assets/img/etna.png" class="EtnaPicture">
         <img src="../assets/img/nuage.png" alt="nuage" class="nuage">
     </div>
     <div class="right">
@@ -79,6 +78,10 @@
         </div>
       </div>
   </div>
+  <div class="trans"></div>
+  <div class="formation">
+    <img src="../assets/img/etna.png" alt="etnaPicture" class="etnaPicture">
+  </div>
   </div>
   
 </template>
@@ -96,6 +99,7 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  box-shadow: 0px 0px 10px 2px black;
 }
 
 .content h2 {
@@ -174,6 +178,10 @@ h3 {
     border-bottom: 30px solid #03a8f49c;
     }
 
+  #triangle:target html {
+    transform: translateX(800px);
+  }
+
 @keyframes float {
   0% {
     top: 0px;
@@ -214,32 +222,52 @@ h3 {
     height: 789px;
     width: 100%;
     padding: 50px;
+    margin: 0%;
+  }
+
+  .name {
+    margin-top: 20px;
+    font-size: 40px;
   }
   
   .profilePicutre {
     height: 400px;
     width: auto;
-    z-index: -1;
-  }
-
-  .EtnaPicture {
-    width: 100px;
-    height: auto;
-    margin-right: 100px;
   }
 
   .nuage {
     bottom: 100px;
     width: 500px;
     height: auto;
-    z-index: 1;
   }
+
+  .right {
+    margin-top: 200px;
+  }
+
+/*############################# Transition */
+
+.trans {
+  background: linear-gradient(to bottom, yellow,#03a9f4);
+  height: 489px;
+}
+
+/*############################# Formation */
+
+.formation {
+  background: #03a9f4;
+  height: 789px;
+}
+
+.etnaPicture {
+  width: 300px;
+  height: auto;
+}
 
 /*############################# Competences */
 
 .competences {
-    height: 717px;
-  
+    height: 517px;
     margin: 0 auto;
     padding: 2%;
     background: yellow;
@@ -252,6 +280,7 @@ h3 {
   }
 
     .langages {
+      margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -265,6 +294,7 @@ h3 {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 
     box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.371);
 
@@ -322,13 +352,19 @@ h3 {
 /*############################# Maitrise Text  */
 
   .comp-txt {
-    font-family: "Poppins", sans-serif;
+    color: #333;
+    font-family: tahoma;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-transform: uppercase;
     display: flex;
     padding-left: 0px;
     max-width: 40ch;
     text-align: center;
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    margin-top: 10px;
   }
 /*#############################@ Always be Code */
 .A-B-C {
@@ -342,6 +378,7 @@ h3 {
   overflow: hidden;
   position: relative;
   width: 100%;
+  margin-top: 100px;
 }
 
 .A-B-C  span {
