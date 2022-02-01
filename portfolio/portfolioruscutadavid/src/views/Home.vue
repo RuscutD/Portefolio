@@ -4,24 +4,25 @@
   <div class="content">
     <h2>David</h2>
     <h2>David</h2>
-    <h3>Étudiant Développement Web</h3>
-    <div id="triangle"></div>
+    <h3 class="post">Développeur & Integrateur Web</h3>
   </div>
+    <div class="scroll-spc">
+      <div id="triangle"></div>
+    </div>
   </div>
-  <div class="line"></div>
-  <div class="about">
+  <div class="about" id="profile">
     <div class="left">
         <img alt="profile picture" src="../assets/img/profilePicture.jpeg" class="profilePicutre">
       <h1 class="name">Ruscuta David</h1>
       <h5>Étudiant Développement Web</h5>
-        <img src="../assets/img/nuage.png" alt="nuage" class="nuage">
+      <img src="" alt="">
     </div>
     <div class="right">
       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus, perspiciatis suscipit commodi cupiditate iure quas nobis velit cum expedita sed possimus qui, consequatur aspernatur dicta dolor mollitia soluta. Ut.</h1>
     </div>
   </div>
         <h1 class="A-B-C">
-        <span>always be</span>
+        <span style="margin-left: 670px;">always be</span>
           <div class="message">
             <div class="word1">training</div>
             <div class="word2">coding</div>
@@ -38,7 +39,6 @@
             <div class="comp-cont">
               <p class="p-html">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati et exercitationem aperiam, repellat similique enim quasi fugit laboriosam laborum architecto, rem illum veniam. Debitis officiis harum doloribus iusto soluta aspernatur.</p>
             </div>
-              <progress class="html-lvl" max="100" value="50"></progress>
         </div>
         <div id="btn-css" class="comp">
           <h4>CSS 3</h4>
@@ -47,7 +47,6 @@
             <div class="comp-cont">
               <p class="p-css">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati unde nemo perferendis debitis sequi explicabo porro aliquam quis officiis impedit in temporibus, distinctio id provident repudiandae sed veniam placeat. Vero.</p>
             </div>
-              <progress class="css-lvl" max="100" value="50"></progress>
         </div>
         <div id="btn-js" class="comp">
           <h4>JAVASCRIPT</h4>
@@ -56,7 +55,6 @@
             <div class="comp-cont">
               <p class="p-js">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem sint, quas possimus ipsa non cupiditate eum maiores dicta ex sequi error, necessitatibus repellat praesentium! Eius iure quam accusamus quaerat placeat.</p>
             </div>
-              <progress class="js-lvl" max="100" value="30"></progress>
         </div>
         <div id="btn-php" class="comp">
           <h4>PHP</h4>
@@ -65,7 +63,6 @@
             <div class="comp-cont">
               <p class="p-php">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quibusdam maxime quis quisquam quaerat, dolore repellendus et? Dolores, repellendus minima. Earum rerum, eius excepturi reprehenderit perspiciatis quod molestias nihil voluptate?</p>
             </div>
-              <progress class="php-lvl" max="100" value="10"></progress>
         </div>
         <div id="btn-sql" class="comp">
           <h4>SQL</h4>
@@ -74,13 +71,48 @@
             <div class="comp-cont">
               <p class="p-sql">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias odio consectetur enim amet, ratione quod consequatur, autem non voluptates repudiandae provident officia dolor ab quisquam blanditiis placeat! Iure, dolorum.</p>
             </div>
-              <progress class="sql-lvl" max="100" value="30"></progress>
         </div>
       </div>
   </div>
   <div class="trans"></div>
   <div class="formation">
-    <img src="../assets/img/etna.png" alt="etnaPicture" class="etnaPicture">
+    <div style="display: flex; justify-content: center;">
+      <div style="display: flex;flex-direction: column; margin-right: 130px; margin-top: 37px;">
+        <h1 style="color: white; ">Année Préparatoire 2021</h1>
+        <h2 style="font-size: 15px;">Chargé de développement et de mise en oeuvre de projets SI</h2>
+      </div>
+      <img src="../assets/img/etna.png" alt="etnaPicture" class="etnaPicture">
+    </div>
+    <div class="project-list">
+      <div class="project-card">
+        <div>
+        <h1 class="project-title">The Hyrule Castle</h1>
+        <h5>09/21</h5>
+        </div>
+        <p>Jeu de type RPG basé sur l'univers "Zelda" avec un gameplay permettant de vaincre des "Boss" en contrôlant le jeu en interagissant avec les touches du clavier</p>
+      </div>
+      <div class="project-card">
+        <div>
+          <h1 class="project-title">Dungeon Keeper Game</h1>
+          <h5>11/21</h5>
+        </div>
+        <p>"Clicker Game" basé sur l'univers "Dungeon Keeper Game". Incrémentation, Auto-Incrémentation et achats de bonus permettant l'évolution du jeu</p>
+      </div>
+      <div class="project-card">
+        <div>
+          <h1 class="project-title">Liberty Commerce</h1>
+          <h5>10/21</h5>
+        </div>
+        <p>Site d'e-commerce pour vente de pianos avec création et gestion de comptes utilisateurs et des produits pour l'administrateur</p>
+      </div>
+      <div class="project-card">
+        <div>
+          <h1 class="project-title">Extension Mentor Goal</h1>
+          <h5>12/21</h5>
+        </div>
+        <p>Outil visant à aider, faciliter et suivre les candidatures des differents clients</p>
+      </div>
+    </div>
   </div>
   </div>
   
@@ -90,6 +122,20 @@
 </script>
 
 <style>
+
+.content {
+  animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%
+  }
+}
+
 /*############################# Welcome */
 
 .content {
@@ -118,6 +164,28 @@
   color: #03a9f4;
   animation: animate 4s ease-in-out infinite;
 }
+
+.post {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #03a9f4, #fff, #000);
+  background-size: 80%;
+  animation: anim 5s infinite;
+  -webkit-background-clip: text;
+   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+      @keyframes anim {
+        0% {
+          background-position: -400%;
+        }
+        50% {
+          background-position: 100%;
+        }
+        100% {
+          background-position: 400%;
+        }
+      }
 
 @keyframes animate {
   0%,
@@ -182,6 +250,23 @@ h3 {
     transform: translateX(800px);
   }
 
+  .scroll-spc {
+    animation: display 4s;
+    margin-left: 700px;
+  }
+
+@keyframes display {
+  0% {
+    opacity: 0%;
+  }
+  90% {
+    opacity: 1%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 @keyframes float {
   0% {
     top: 0px;
@@ -194,18 +279,6 @@ h3 {
   }
 }
 
-/*############################# Line  */
-
-    .line {
-    width: 20px;
-    height: 5px;
-    background-color: #03a9f4;
-    position: relative;
-    animation: infinite;
-    animation-name: move-line;
-    animation-duration: 4s;
-  }
-
   @keyframes move-line {
     0%   {left:0px; top:0px; width: 20px;}
     25%  {left:745px; top:0px; width: 100px;}
@@ -217,12 +290,13 @@ h3 {
 /*############################# About */
 
   .about {
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
-    height: 789px;
+    justify-content: baseline;
+    height: 580px;
     width: 100%;
     padding: 50px;
-    margin: 0%;
   }
 
   .name {
@@ -242,14 +316,15 @@ h3 {
   }
 
   .right {
-    margin-top: 200px;
+    margin-top: 100px;
+    padding: 50px;
   }
 
 /*############################# Transition */
 
 .trans {
   background: linear-gradient(to bottom, yellow,#03a9f4);
-  height: 489px;
+  height: 200px;
 }
 
 /*############################# Formation */
@@ -257,19 +332,52 @@ h3 {
 .formation {
   background: #03a9f4;
   height: 789px;
+  padding: 50px;
 }
 
 .etnaPicture {
   width: 300px;
   height: auto;
+
+  margin-bottom: 50px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #00acfc;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  justify-content: space-around;
+
+  border-radius: 20px;
+
+  box-shadow: 0px 5px 5px 2px #0d94d3;
+}
+
+.project-card:hover {
+  width: 430px;
+  transition-duration: 0.3s;
+  background-color: white;
+  box-shadow: 0px 5px 5px 2px rgba(255, 255, 255, 0.371);
+  color: black;
 }
 
 /*############################# Competences */
 
 .competences {
-    height: 517px;
+    height: 400px;
     margin: 0 auto;
     padding: 2%;
+    /*background: rgb(144, 228, 70);*/
     background: yellow;
   }
 
@@ -291,6 +399,7 @@ h3 {
     height: 150px;
   
     display: flex;
+    padding: 10px;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
@@ -308,7 +417,7 @@ h3 {
     box-shadow: 0px 0px 10px 2px #7c81839c;
     
     width: 300px;
-    height: 450px;
+    height: 300px;
   }
   
   .comp:hover .logo{
@@ -318,6 +427,7 @@ h3 {
   .comp:hover h4{
     animation-duration: 0.5s;
     display: block;
+
   }
 
   .comp-cont {
@@ -325,6 +435,7 @@ h3 {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    
   }
 
   hr {
@@ -337,11 +448,11 @@ h3 {
     width: 240px;
   }
   
-  .p-html {display: none;}.html-lvl {display: none;}#btn-html:hover .p-html{display: block;}#btn-html:hover .html-lvl{display: block;}#btn-html:hover .html-hr{display: block;}
-  .p-css {display: none;}.css-lvl {display: none;}#btn-css:hover .p-css {display: block;}#btn-css:hover .css-lvl{display: block;}#btn-css:hover .css-hr{display: block;}
-  .p-js {display: none;}.js-lvl {display: none;}#btn-js:hover .p-js {display: block;}#btn-js:hover .js-lvl{display: block;}#btn-js:hover .js-hr{display: block;}
-  .p-php {display: none;}.php-lvl {display: none;}#btn-php:hover .p-php {display: block;}#btn-php:hover .php-lvl{display: block;}#btn-php:hover .php-hr{display: block;}
-  .p-sql {display: none;}.sql-lvl {display: none;}#btn-sql:hover .p-sql {display: block;}#btn-sql:hover .sql-lvl{display: block;}#btn-sql:hover .sql-hr{display: block;}
+  .p-html {display: none; margin-top: 20px;}.html-lvl {display: none;}#btn-html:hover .p-html{display: block;}#btn-html:hover .html-lvl{display: block;}#btn-html:hover .html-hr{display: block;}
+  .p-css {display: none; margin-top: 20px;}.css-lvl {display: none;}#btn-css:hover .p-css {display: block;}#btn-css:hover .css-lvl{display: block;}#btn-css:hover .css-hr{display: block;}
+  .p-js {display: none; margin-top: 20px;}.js-lvl {display: none;}#btn-js:hover .p-js {display: block;}#btn-js:hover .js-lvl{display: block;}#btn-js:hover .js-hr{display: block;}
+  .p-php {display: none; margin-top: 20px;}.php-lvl {display: none;}#btn-php:hover .p-php {display: block;}#btn-php:hover .php-lvl{display: block;}#btn-php:hover .php-hr{display: block;}
+  .p-sql {display: none; margin-top: 20px;}.sql-lvl {display: none;}#btn-sql:hover .p-sql {display: block;}#btn-sql:hover .sql-lvl{display: block;}#btn-sql:hover .sql-hr{display: block;}
 
    .logo {
     margin-top: 20px;
@@ -391,7 +502,7 @@ h3 {
   font-weight: 900;
   overflow: hidden;
   position: absolute;
-  left:850px;
+  left: 1170px;
   animation: openclose 5s ease-in-out infinite;
 }
 
